@@ -1,7 +1,9 @@
-%prompts the user for a character and a number and
-%formats printing both
-
-ch=input('enter a character','s');
-num=input('enter a number:');
-fprintf('the character is ', ch)
-fprintf('the number is ', num)
+%Enter a length
+length=input('Enter Length')
+%Enter wheather that length is feet or meters
+unit=input('Enter 1 for Feet or 0 for Meters','s')
+if (unit<1)
+    disp('meters')
+else
+    disp('feet')
+end
