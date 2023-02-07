@@ -1,0 +1,16 @@
+% Constants
+R = 400; % m
+v_max = 72*1000/3600; % m/s
+a_max = 1.5; % m/s^2
+
+% Shortest distance to reach v_max
+at = (v_max^2)/(2*R);
+if at > a_max
+    disp("Error: The maximum acceleration is exceeded.");
+else
+    s = (v_max^2)/(2*at);
+    disp("The shortest distance in which the train can reach a speed of 72 km/h is:");
+    disp(s);
+    disp("The corresponding constant rate of acceleration at is:");
+    disp(at);
+end
