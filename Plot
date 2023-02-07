@@ -1,0 +1,14 @@
+% Generate random data
+x = 1:10;
+y = rand(1,10);
+
+% Plot the data
+plot(x,y)
+
+% Add labels and title
+xlabel('X axis')
+ylabel('Y axis')
+title('Plot of random data')
+
+% Turn on grid
+grid on
